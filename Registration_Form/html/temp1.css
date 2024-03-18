@@ -1,0 +1,110 @@
+body{
+   background-color: peachpuff;
+}
+#box1{
+   background-color: rgb(16, 142, 89);
+   width: 200px;
+   box-sizing: border-box;
+   height: 1180px;
+   text-align: left;
+   z-index: 2;
+   position:absolute;
+   padding: 10px;
+   margin: -1px 0px 0px 50px;
+   color: rgb(208, 224, 238);
+}
+#box2{
+   background-color: rgb(238, 165, 101);
+   width: 700px;
+   z-index: 1;
+   position: relative;
+   height: 140px;
+   padding-left: 300px;
+   padding-top: 60px;
+}
+#name{
+   height: 80px;
+   width: 300px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: xx-large;
+   text-transform: uppercase;
+   font-weight: bolder;
+}
+textarea{
+   height: 150px;
+   width: 150px;
+   background-color: transparent;
+   box-shadow: rgb(231, 231, 228);
+   border-color: rgb(18, 29, 40);
+}
+#qul{
+   height: 150px;
+   width: 250px;
+   background-color: transparent;
+   box-shadow: beige;
+}
+
+#content,#qu{
+   background-color: transparent;
+   box-shadow: beige;
+   margin-left: 310px;
+}
+i{
+   margin-left:10px;
+   text-align: center;
+   position: relative;
+   font-size:120px;
+}
+h3 i{
+   color: rgb(10, 150, 66);
+}
+h4 input {
+   background-color: transparent;
+   width: 100px;
+   box-shadow: beige;
+   border-radius: 5px;
+   color: aliceblue;
+}
+#container{
+   position: relative;
+   display:grid;
+   grid-template-columns: 500px;
+   padding: 40px 0px 50px;
+   margin-left: 110px;
+   align-items:flex-start;
+   width: 1000px;
+   height: 1090px;
+   border: 2px solid black;
+   box-shadow: 3px 5px #888;
+   background-color: white;
+}  
+#document{
+   display: none;
+} 
+#dp{
+   text-align: center;
+   cursor: pointer;
+   background-color: wheat;
+   border-radius: 3px;
+   color: black;
+   margin-left: 40px;
+   margin-top: 200px;
+   padding: 5px;
+}
+label:hover{
+   color: rgb(0, 47, 255);
+   box-shadow: 2px 2px 2px 2px black;
+}
+#profile{
+   height: 150px;
+   width: 150px;
+   margin-left: 20px;
+   border-radius: 200px;
+   border: 10x solid black;
+}
+button{
+   margin-left: 1000px;
+   margin-top: 30px;
+   font-size: large;
+   cursor: pointer;
+}

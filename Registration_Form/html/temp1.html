@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="temp1.css">
+   <script src="https://kit.fontawesome.com/c91f908e83.js" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+   <div id="container">
+   <div id="box1">
+      <br><br>
+      <img src="\image\profile.png" alt="" id="profile"><br><br>
+      <label for="document" id="dp">select image</label>
+      <input type="file" accept="image/jpeg , image/png , image/jpg" id="document">
+      <br><br>
+      <h4>PROFILE</h4>
+      <textarea></textarea>
+      <br>
+      <h4>CONTACT ME</h4>
+      <h4><i class="fa-sharp fa-solid fa-phone" style="font-size: large;"></i>&emsp;<input type="number"placeholder="91" id="phn"></h4>
+      <h4><i class="fa-sharp fa-solid fa-envelope" style="font-size: large;"></i>&emsp;<input type="email"placeholder=".com"></h4>
+      <h4><i class="fa-sharp fa-solid fa-location-dot" style="font-size: large;"></i>&emsp;<textarea></textarea></h4>
+   </div>
+   <div id="box2">
+      <textarea id="name">Type your name</textarea>
+   </div>
+   <div id="content">
+      <h3><i class="fa-sharp fa-solid fa-right-long" style="font-size: large;"></i>&emsp;Education</h3>
+      <textarea id="qul">Click Here</textarea>
+      <h3><i class="fa-sharp fa-solid fa-right-long" style="font-size: large"></i>&emsp;Language</h3>
+      <textarea id="qul">Click Here</textarea>
+      <h3><i class="fa-sharp fa-solid fa-right-long" style="font-size: large;"></i>&emsp;Skills</h3>
+      <textarea id="qul">Click Here</textarea>
+      <h3><i class="fa-sharp fa-solid fa-right-long" style="font-size: large;"></i>&emsp;Volunteer Experience</h3>
+      <textarea id="qul">Click Here</textarea>
+   </div>
+</div>
+<div class="container mt-4 text-center">  
+   <button class="btn btn-primary btn-lg" onclick="download_pdf()">Download PDF</button>
+   </div>
+
+   <script>
+      let profilepic=document.getElementById("profile");
+      let inputfile=document.getElementById("document");
+      inputfile.onchange=function(){
+         profilepic.src=URL.createObjectURL(inputfile.files[0]);
+      }
+      
+      function download_pdf(){
+         const pdf=document.getElementById("container");
+         html2pdf().from(pdf).save();
+      }
+   </script>
+</body>
+</html>

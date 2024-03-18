@@ -1,0 +1,108 @@
+
+body{
+   background:linear-gradient(15deg,white,rgb(252, 218, 164),rgb(152, 104, 36),white);;
+   background-size: 800% 500%;
+}
+#resume{
+   width: 950px;
+   margin-left: 100px;
+   border: 1px solid;
+   padding: 30px;
+   box-shadow: 8px 10px #888;
+   background-color: white;
+}
+header{
+   height: 200px;
+   width: 600px;
+}
+header textarea{
+   height: 50px;
+   width: 550px;
+   background-color: transparent;
+   box-shadow: rgb(231, 231, 228);
+   border-color: rgb(18, 29, 40);
+   text-transform: capitalize;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: xx-large;
+   font-style: bold;
+}
+section{
+   height: 700px;
+   width: 600px;
+}
+#sum textarea{
+   width: 550px;
+   height: 150px;
+}
+.container{
+   position: absolute;
+   z-index: 1;
+}
+aside{
+   position: relative;
+   z-index:2;
+   background-color: black;
+   height: 1200px;
+   width: 300px;
+   margin-left: 600px;
+   color: aliceblue;
+}
+#dp{
+   text-align: center;
+   font-size: 100px;
+   padding-top: 50px;
+   margin-right: 100px;
+   position: relative;
+   border-radius: 10px;
+}
+#dp i{
+   cursor: pointer;
+}
+#emp textarea{
+   width: 550px;
+   height: 120px;
+   font-size: large;
+}
+.profile textarea{
+   margin-left:12px ;
+   background-color: black;
+   padding-left: 12px;
+   color: aliceblue;
+   font-size: large;
+   height: 20px;
+}
+
+button{
+   margin-left: 1000px;
+   margin-top: 30px;
+   font-size: x-large;
+   cursor: pointer;
+   margin-bottom: 50px;
+}
+
+#document{
+   display: none;
+} 
+#dp{
+   text-align: center;
+   cursor: pointer;
+   background-color: wheat;
+   border-radius: 3px;
+   color: rgb(25, 22, 22);
+   margin-left: 40px;
+   margin-top: 200px;
+   padding: 5px;
+   font-size: medium;
+}
+label:hover{
+   color: rgb(102, 126, 229);
+   box-shadow: 2px 2px 2px 2px rgb(245, 225, 225);
+}
+#profile{
+   height: 150px;
+   width: 150px;
+   margin-left: 80px;
+   margin-top: 20px;
+   border-radius: 50%;
+   border: 10x solid rgb(241, 224, 224);
+}

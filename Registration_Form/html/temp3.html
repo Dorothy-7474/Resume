@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="temp3.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://kit.fontawesome.com/c91f908e83.js" crossorigin="anonymous"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div id="content">
+      <header>
+         <textarea id="head" cols="30" rows="2">Type Your Name</textarea>
+      </header>
+      <div class="box1">
+         <aside>
+            <div id="circle">
+               <img src="\image\profile.png" alt="" id="profile"><br><br>
+               <label for="document" id="dp">select image</label>
+               <input type="file" accept="image/jpeg , image/png , image/jpg" id="document">
+            </div><br><br>
+            <div class="details">
+               <h3>Contact</h3>
+               <i class="fa-sharp fa-solid fa-phone" style="font-size: medium; color:aliceblue" ></i><textarea cols="15" rows="2"></textarea><br>
+               <h4><i class="fa-sharp fa-solid fa-envelope" style="font-size: large;color:aliceblue"></i><textarea cols="15" rows="2"></textarea><br></h4>
+                  <i class="fa-sharp fa-solid fa-location-dot" style="font-size: large;color:aliceblue"></i><textarea cols="15" rows="2"></textarea>
+               <h3>Interest</h3>
+               <textarea cols="20" rows="7"></textarea>
+               <h3>Languages</h3>
+               <textarea cols="20" rows="9"></textarea>
+            </div>
+         </aside>
+         <article class="main"><var><br>
+            <h3>About Me</h3>
+               <textarea cols="30" rows="9"></textarea>
+               <h3>Education</h3>
+               <textarea cols="30" rows="9"></textarea>
+               <h3>Skills</h3>
+               <textarea cols="30" rows="7"></textarea>
+         </article>
+      </div>
+   </div>
+
+   <div class="container mt-4 text-center">  
+      <button class="btn btn-primary btn-lg" onclick="download_pdf()">Download PDF</button>
+      </div>
+
+   <script>
+      let profilepic=document.getElementById("profile");
+      let inputfile=document.getElementById("document");
+      inputfile.onchange=function(){
+         profilepic.src=URL.createObjectURL(inputfile.files[0]);
+      }
+      
+      function download_pdf(){
+         const pdf=document.getElementById("content");
+         html2pdf().from(pdf).save();
+      }
+   </script>
+</body>
+</html>
